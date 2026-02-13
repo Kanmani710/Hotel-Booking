@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Booking</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🏨 Book Your Hotel</h1>
+      <form action="/book" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" required />
+
+        <label>Email:</label>
+        <input type="email" name="email" required />
+
+        <label>Password:</label>
+        <input type="password" name="password" required />
+
+        <label>Select Hotel:</label>
+        <select name="hotel" required>
+          <option value="Taj Palace">Taj Palace</option>
+          <option value="Oberoi">Oberoi</option>
+          <option value="ITC Grand">ITC Grand</option>
+        </select>
+
+        <button type="submit">Book Room</button>
+      </form>
+    </div>
+  </body>
+</html>
